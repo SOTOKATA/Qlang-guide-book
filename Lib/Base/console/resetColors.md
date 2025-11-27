@@ -5,12 +5,12 @@ Default is gray color for foreground and black color for background
 
 Signature:
 
-```
+```ql
 function resetColors()
 ```
 
 Example:
 
-```
+```ql
 Console.resetColors();
 ```

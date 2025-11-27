@@ -5,12 +5,12 @@ Available colors is similar to C# colors
 
 Signature:
 
-```
+```ql
 function setForeColor(let color)
 ```
 
 Example:
 
-```
+```ql
 Console.setForeColor("yellow");
 ```

@@ -4,13 +4,13 @@ Function `isKeyAvailable` used to check if any key is available
 
 Signature:
 
-```
+```ql
 function isKeyAvailable()
 ```
 
 Example:
 
-```
+```ql
 let printed = "";
 while true: {
     if Console.isKeyAvailable(): {
@@ -22,8 +22,9 @@ while true: {
 
 Console:
 
-```
-(case if user print press anything)
+```text
+// Case if user print press anything
 You printed: [user-input]
-(else will run while)
+
+// Else will run while ...
 ```
