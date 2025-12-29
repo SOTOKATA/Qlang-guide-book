@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Syntax - Qlang documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Syntax";
+        var mkdocs_page_input_path = "syntax.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Qlang documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../project/">Project</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../my-first-program/">My first program</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Syntax</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#class">Class</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#creation">Creation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#inheritance">Inheritance</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#creating-a-copy">Creating a copy</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#functions">Functions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#definition">Definition</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#function-call">Function call</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#variables">Variables</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#definition_1">Definition</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#get-and-change">Get and change</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Qlang documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Syntax</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="syntax">Syntax</h1>
+<p>The syntax of the language is similar to JavaScript, but also has elements from C++ and C#.</p>
+<p>An example of a program that will display <code>Hello, World!</code> in the console:</p>
+<pre class="highlight"><code class="language-qlc">// Adding a standard class package (in our case, the `Console` class)
+// This file must be added because it contains the core functionality of the language.
+include "$lib/base"
+
+// Creating the `main` function, which will be called when the program starts
+function main(): {
+    // Call the `println` function from the `Console` class and pass the argument `“Hello, World!”`
+    // To end the line, use `;`
+    Console.println("Hello, World!");
+}</code></pre>
+<h2 id="class">Class</h2>
+<h3 id="creation">Creation</h3>
+<p>To create a class, you need to write the keyword <code>class</code> and the class name:</p>
+<pre class="highlight"><code class="language-ql">class MyClass: {
+    // Function that will be called when creating a new copy of the class.
+    // JavaScript equivalent: constructor function
+    function new(): {
+
+    }
+}</code></pre>
+<h3 id="inheritance">Inheritance</h3>
+<p>A class can also inherit other classes:</p>
+<pre class="highlight"><code class="language-ql">class MyClass extends OtherClass: {
+    // Class body.
+}</code></pre>
+<p>Functions and variables from the <code>OtherClass</code> class will be added to <code>MyClass</code>.</p>
+<h3 id="creating-a-copy">Creating a copy</h3>
+<p>Creating a new copy:</p>
+<pre class="highlight"><code class="language-ql">const myClassInstance = MyClass.new();</code></pre>
+<h2 id="functions">Functions</h2>
+<h3 id="definition">Definition</h3>
+<p>The definition can be made in class or in a file.</p>
+<p>When declared in a class, the <code>private</code> modifier is also available. When added, the function can be called  <strong>only</strong> in the parent class.</p>
+<p>To declare a function, use the keyword <code>function</code>, the function name, and the parameters in parentheses (if any):</p>
+<pre class="highlight"><code class="language-ql">function main(): {
+    // Function body.
+}
+
+function functionExample(const&lt;String&gt; var): {
+    // Body recived var (must be `String` type).
+}
+
+class MyClass: {
+    // Acess only from `MyClass` (`MyClass.classFunction()`) or in `MyClass` (just: `classFunction()` or with keyword `this`)
+    function classFunction(): {
+
+    }
+
+    // Access only in `MyClass`
+    private function privateClassFunction(): {
+
+    }
+}</code></pre>
+<h3 id="function-call">Function call</h3>
+<p>To call a function, write its name and parameters in parentheses (if any):</p>
+<pre class="highlight"><code class="language-ql">function main(): {
+    // Call function.
+    functionExample("Hello, World!");
+}
+
+function functionExample(const&lt;String&gt; var): {
+    // Body recived var (must be `String` type).
+}</code></pre>
+<h2 id="variables">Variables</h2>
+<h3 id="definition_1">Definition</h3>
+<p>Declarations occur in classes, functions, blocks, and simply in a file.
+When declaring, you should specify the mutability of the function (<code>const</code> - immutable, <code>let</code> - mutable, as in JavaScript).</p>
+<p>When declared in a class, the <code>private</code> modifier is also available. When added, the variable can be called or changed <strong>only</strong> in the parent class.</p>
+<pre class="highlight"><code class="language-ql">// Access available from anywhere
+// This method is not recommended because the variable can also be obtained in other files.
+const global_var = 1;
+
+class MyClass: {
+    // Access only from or in `MyClass`
+    const class_var = 1;
+
+    // Access only in `MyClass`
+    private const private_class_var = 1;
+}
+
+function main(): {
+    // Access only in function `main`
+    let name = "Volodymyr";
+}</code></pre>
+<h3 id="get-and-change">Get and change</h3>
+<p>To obtain the value of a variable, simply write the path to it.
+To change the value, you need to write the path to it and then write equal and the value.</p>
+<pre class="highlight"><code class="language-ql">class MyClass: {
+    let var = 10;
+
+    function myFunction() {
+        // Change the value of `var`
+        var = 20;
+    }
+}
+
+function main() {
+    // Now value of `var` is changed
+    MyClass.var = 30;
+
+    const myClassInstance = MyClass.new();
+
+    // Now value of `var` is changed in the instance `myClassInstance`
+    myClassInstance.var = 40;
+}</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../my-first-program/" class="btn btn-neutral float-left" title="My first program"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../my-first-program/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../javascripts/extra.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
