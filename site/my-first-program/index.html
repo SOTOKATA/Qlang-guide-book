@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="ru" >
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="SOTOKATA" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
     <title>My first program - Qlang documentation</title>
     <link rel="stylesheet" href="../css/theme.css" />
@@ -14,7 +14,7 @@
       <script>
         // Current page data
         var mkdocs_page_name = "My first program";
-        var mkdocs_page_input_path = "my-first-program.md";
+        var mkdocs_page_input_path = "my-first-program.ru.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -22,6 +22,7 @@
       <script src="../js/html5shiv.min.js"></script>
     <![endif]-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/ql.min.js"></script>
       <script>hljs.highlightAll();</script> 
 </head>
 
@@ -31,15 +32,16 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Qlang documentation
+          <a href="..">
+          <img src="../assets/logo.png" class="logo" alt="Логотип"/>
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" title="Введите поисковый запрос" />
   </form>
 </div>
       </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Навигационное меню">
               <ul>
                 <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
                 </li>
@@ -55,19 +57,47 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">My first program</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_1">Создание программы</a>
+    </li>
     </ul>
                 </li>
               </ul>
+              <p class="caption"><span class="caption-text">Syntax</span></p>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../syntax/">Syntax</a>
-                </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntax/introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntax/body/">Bodies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntax/class/">Classes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntax/function/">Functions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntax/variable/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntax/blocks/">Blocks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntax/include/">Include files</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">External Libraries (C#)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../external-lib/introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../external-lib/installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../external-lib/creation/">Creation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../external-lib/using/">Using</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../external-lib/limitation.md">Limitation</a>
+                  </li>
               </ul>
       </div>
     </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+      <nav class="wy-nav-top" role="navigation" aria-label="Мобильная версия навигации">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="..">Qlang documentation</a>
         
@@ -75,9 +105,10 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+    <li><a href=".." class="icon icon-home" aria-label="Документация"></a></li>
       <li class="breadcrumb-item active">My first program</li>
     <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/SOTOKATA/Qlang-guide-book/edit/master/docs/my-first-program.ru.md" class="icon icon-github"> Редактировать в Github</a>
     </li>
   </ul>
   <hr/>
@@ -86,25 +117,36 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="my-first-program">My first program</h1>
+<p>Язык имеет систему проектов, то-есть любая программа изначально проект а не просто файлы.
+Основная статья по проектам находиться <a href="../project/">тут</a>.</p>
+<h2 id="_1">Создание программы</h2>
+<p>Для создания проекта следует написать команду в консоле:</p>
+<div class="highlight"><pre><span></span><code>ql new &lt;project-name&gt;
+</code></pre></div>
+<p>Вместо <code>&lt;project-name&gt;</code> следует написать название вашого проекта</p>
 <blockquote>
-<p><strong>MANDATORY: Before doing this, complete the section on <em><a href="../installation/">installing</a></em> the compiler!</strong></p>
+<p>ВАЖНО: Потдерживаються лишь англиские символы, точки, подчеркивание и дефисы!</p>
 </blockquote>
-<p>To create your first program, you should create a <a href="../project/">project</a>.</p>
-<p>To create a project, use the <code>new</code> command:</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">ql</span> <span class="n">new</span> <span class="no">[project_name]</span>
-</span></code></pre></div>
-<p>After that, a folder named <code>[project_name]</code> will be created with the program <em><a href="../syntax/">“Hello, World!”</a></em> already written inside.
-To start the project (and compile it), use the command:</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">ql</span> <span class="n">run</span>
-</span></code></pre></div>
-<p>The compiler will automatically find the <code>main.ql</code> file, then create an executable file with the program and run it.
-The program usually runs in console mode.</p>
+<p>После выполения команды создастся папка с именем проекта. В ней будут находится несколько файлов, нас интересует лишь <code>main.ql</code>
+В нем уже будет написан пример программы, которая выведет "Hello, World!" в консоль:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">include</span><span class="w"> </span><span class="s">&quot;$lib/base&quot;</span>
+
+<span class="nv">function</span><span class="w"> </span><span class="nv">main</span><span class="p">():</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nc">Console</span><span class="p">.</span><span class="nv">println</span><span class="p">(</span><span class="s">&quot;Hello, World!&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Для полного разбора данного примера смотрите статью: <a href="../syntax/hello-program/">"Hello, World!" программа</a>.</p>
+<p>Чтобы запустить программу следует в <strong>директории проекта</strong> прописать комманду:</p>
+<div class="highlight"><pre><span></span><code>ql run
+</code></pre></div>
+<p>Данная команда запустить компиляцию и выполнение кода.</p>
+<p>Поздравляю, вы написали свою первую программу! Чтобы лучше разобраться в коде прочитайте: <a href="../syntax/introduction/">Синтаксис языка</a>.</p>
               
             </div>
           </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../project/" class="btn btn-neutral float-left" title="Project"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../syntax/" class="btn btn-neutral float-right" title="Syntax">Next <span class="icon icon-circle-arrow-right"></span></a>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Навигация по странице">
+        <a href="../project/" class="btn btn-neutral float-left" title="Project"><span class="icon icon-circle-arrow-left"></span> Назад</a>
+        <a href="../syntax/introduction/" class="btn btn-neutral float-right" title="Introduction">Вперед <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -113,7 +155,7 @@ The program usually runs in console mode.</p>
     <!-- Copyright etc -->
   </div>
 
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Собрано в <a href="https://www.mkdocs.org/">MkDocs</a> с использованием <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы</a> от <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
           
         </div>
@@ -123,14 +165,18 @@ The program usually runs in console mode.</p>
 
   </div>
 
-  <div class="rst-versions" role="note" aria-label="Versions">
+  <div class="rst-versions" role="note" aria-label="Версии">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
+        <span>
+          <a href="https://github.com/SOTOKATA/Qlang-guide-book" class="fa fa-code-fork" style="color: #fcfcfc"> Github</a>
+        </span>
     
-      <span><a href="../project/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+      <span><a href="../project/" style="color: #fcfcfc">&laquo; Назад</a></span>
     
     
-      <span><a href="../syntax/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../syntax/introduction/" style="color: #fcfcfc">Вперед &raquo;</a></span>
     
   </span>
 </div>
@@ -138,7 +184,7 @@ The program usually runs in console mode.</p>
     <script>var base_url = "..";</script>
     <script src="../js/theme_extra.js"></script>
     <script src="../js/theme.js"></script>
-      <script src="../javascripts/extra.js"></script>
+      <script src="../assets/javascripts/extra.js"></script>
       <script src="../search/main.js"></script>
     <script>
         jQuery(function () {

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="ru" >
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="SOTOKATA" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
     <title>Project - Qlang documentation</title>
     <link rel="stylesheet" href="../css/theme.css" />
@@ -14,7 +14,7 @@
       <script>
         // Current page data
         var mkdocs_page_name = "Project";
-        var mkdocs_page_input_path = "project.md";
+        var mkdocs_page_input_path = "project.ru.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -22,6 +22,7 @@
       <script src="../js/html5shiv.min.js"></script>
     <![endif]-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/ql.min.js"></script>
       <script>hljs.highlightAll();</script> 
 </head>
 
@@ -31,15 +32,16 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Qlang documentation
+          <a href="..">
+          <img src="../assets/logo.png" class="logo" alt="Логотип"/>
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" title="Введите поисковый запрос" />
   </form>
 </div>
       </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Навигационное меню">
               <ul>
                 <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
                 </li>
@@ -51,11 +53,11 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Project</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#project-creation">Project creation</a>
+    <li class="toctree-l2"><a class="reference internal" href="#_1">Создание</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#project-configuration">Project configuration</a>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">Настройка</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#deleting-a-project">Deleting a project</a>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">Удаление</a>
     </li>
     </ul>
                 </li>
@@ -64,16 +66,42 @@
                 <li class="toctree-l1"><a class="reference internal" href="../my-first-program/">My first program</a>
                 </li>
               </ul>
+              <p class="caption"><span class="caption-text">Syntax</span></p>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../syntax/">Syntax</a>
-                </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntax/introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntax/body/">Bodies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntax/class/">Classes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntax/function/">Functions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntax/variable/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntax/blocks/">Blocks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntax/include/">Include files</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">External Libraries (C#)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../external-lib/introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../external-lib/installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../external-lib/creation/">Creation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../external-lib/using/">Using</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../external-lib/limitation.md">Limitation</a>
+                  </li>
               </ul>
       </div>
     </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+      <nav class="wy-nav-top" role="navigation" aria-label="Мобильная версия навигации">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="..">Qlang documentation</a>
         
@@ -81,9 +109,10 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+    <li><a href=".." class="icon icon-home" aria-label="Документация"></a></li>
       <li class="breadcrumb-item active">Project</li>
     <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/SOTOKATA/Qlang-guide-book/edit/master/docs/project.ru.md" class="icon icon-github"> Редактировать в Github</a>
     </li>
   </ul>
   <hr/>
@@ -92,43 +121,42 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="project">Project</h1>
-<p>The programming language uses a project structure for <strong>every</strong> program.
-This means that in order to create the final program, you need to create a project.</p>
-<h2 id="project-creation">Project creation</h2>
-<p>To create a project, use the <code>new</code> command:</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">ql</span> <span class="n">new</span> <span class="no">[project_name]</span>
-</span></code></pre></div>
-<p>A folder named <code>[project_name]</code> will be created.</p>
-<p>Each project contains the following files:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>project_name/
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>main.ql
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>project.settings.json
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>compile.settings.json
-</span></code></pre></div>
-<p><code>main.ql</code> - a file that will be processed by the compiler.</p>
-<p><code>project.settings.json</code> - project parameters (name, as an example).</p>
-<p><code>compile.settings.json</code> - compilation parameters (using debug mode as an example).</p>
-<blockquote>
-<p>These files are <strong>mandatory</strong>, and without them the project will be broken.</p>
-</blockquote>
-<h2 id="project-configuration">Project configuration</h2>
-<p>Project parameters can be configured using the <code>set</code> command:</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">ql</span> <span class="nb">set </span><span class="no">[param] [value]</span>
-</span></code></pre></div>
-<p><code>[param]</code> - the parameter that should be changed.</p>
-<p><code>[value]</code> - the new value of the parameter.</p>
-<p>To obtain information about the current value of a parameter, use the <code>get</code> command:</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">ql</span> <span class="n">get</span> <span class="no">[param]</span>
-</span></code></pre></div>
-<p><code>[param]</code> - the parameter for which information should be obtained.</p>
-<h2 id="deleting-a-project">Deleting a project</h2>
-<p>Just delete the project folder.</p>
+<p>Язык как и C# использует структуру проекта.
+Проект - это просто удобный способ струтурировать файлы, зависимости и настройки программы.</p>
+<h2 id="_1">Создание</h2>
+<p>Чтобы создать новый проект следует прописать команду:</p>
+<div class="highlight"><pre><span></span><code>ql new &lt;project_name&gt;
+</code></pre></div>
+<p>После выполнения будет создана папка с названием проекта, если она уже есть, то будет перезаписана.</p>
+<p>Каждый проект состоит из таких файлов:</p>
+<ul>
+<li><code>main.ql</code></li>
+<li><code>project.settings.json</code></li>
+<li><code>compile.settings.json</code></li>
+</ul>
+<p>Эти файлы являються обязательными, и при удалении или нарушении целосности приведут к поломке всего проекта.</p>
+<p>В файлах с суфиксом <code>settings</code> храняться настройки проекта.</p>
+<p>Файл <code>main.ql</code> будет использован при начале компиляции и должен содержать функцию <code>main</code>.</p>
+<h2 id="_2">Настройка</h2>
+<p>Чтобы настроить <code>settings</code> файлы нужно прописать следущую команду:</p>
+<div class="highlight"><pre><span></span><code>ql set [param] [value]
+</code></pre></div>
+<p><code>set</code> - команда, которая означает изменение параметра</p>
+<p><code>[param]</code> - параметр, который нужно поменять.</p>
+<p><code>[value]</code> - новое значение.</p>
+<p>Если нужно получить информацию про параметр, следует прописать команду:</p>
+<div class="highlight"><pre><span></span><code>ql get [param]
+</code></pre></div>
+<p><code>get</code> - команда, для получение информации про параметр.</p>
+<p><code>[param]</code> - название параметра.</p>
+<h2 id="_3">Удаление</h2>
+<p>Просто удалите папку с проектом.</p>
               
             </div>
           </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../installation/" class="btn btn-neutral float-left" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../my-first-program/" class="btn btn-neutral float-right" title="My first program">Next <span class="icon icon-circle-arrow-right"></span></a>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Навигация по странице">
+        <a href="../installation/" class="btn btn-neutral float-left" title="Installation"><span class="icon icon-circle-arrow-left"></span> Назад</a>
+        <a href="../my-first-program/" class="btn btn-neutral float-right" title="My first program">Вперед <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -137,7 +165,7 @@ This means that in order to create the final program, you need to create a proje
     <!-- Copyright etc -->
   </div>
 
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Собрано в <a href="https://www.mkdocs.org/">MkDocs</a> с использованием <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы</a> от <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
           
         </div>
@@ -147,14 +175,18 @@ This means that in order to create the final program, you need to create a proje
 
   </div>
 
-  <div class="rst-versions" role="note" aria-label="Versions">
+  <div class="rst-versions" role="note" aria-label="Версии">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
+        <span>
+          <a href="https://github.com/SOTOKATA/Qlang-guide-book" class="fa fa-code-fork" style="color: #fcfcfc"> Github</a>
+        </span>
     
-      <span><a href="../installation/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+      <span><a href="../installation/" style="color: #fcfcfc">&laquo; Назад</a></span>
     
     
-      <span><a href="../my-first-program/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../my-first-program/" style="color: #fcfcfc">Вперед &raquo;</a></span>
     
   </span>
 </div>
@@ -162,7 +194,7 @@ This means that in order to create the final program, you need to create a proje
     <script>var base_url = "..";</script>
     <script src="../js/theme_extra.js"></script>
     <script src="../js/theme.js"></script>
-      <script src="../javascripts/extra.js"></script>
+      <script src="../assets/javascripts/extra.js"></script>
       <script src="../search/main.js"></script>
     <script>
         jQuery(function () {
