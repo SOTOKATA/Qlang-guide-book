@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="SOTOKATA" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>My first program - Qlang documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "My first program";
+        var mkdocs_page_input_path = "my-first-program.ru.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/ql.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="..">
+          <img src="../assets/logo.png" class="logo" alt="Логотип"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" title="Введите поисковый запрос" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Навигационное меню">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../project/">Project</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">My first program</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_1">Создание программы</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Syntax</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntax/introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntax/body/">Bodies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntax/class/">Classes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntax/function/">Functions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntax/variable/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntax/blocks/">Blocks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../syntax/include/">Include files</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">External Libraries (C#)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../external-lib/introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../external-lib/installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../external-lib/creation/">Creation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../external-lib/using/">Using</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../external-lib/limitation.md">Limitation</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Мобильная версия навигации">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Qlang documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Документация"></a></li>
+      <li class="breadcrumb-item active">My first program</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/SOTOKATA/Qlang-guide-book/edit/master/docs/my-first-program.ru.md" class="icon icon-github"> Редактировать в Github</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="my-first-program">My first program</h1>
+<p>Язык имеет систему проектов, то-есть любая программа изначально проект а не просто файлы.
+Основная статья по проектам находиться <a href="../project/">тут</a>.</p>
+<h2 id="_1">Создание программы</h2>
+<p>Для создания проекта следует написать команду в консоле:</p>
+<div class="highlight"><pre><span></span><code>ql new &lt;project-name&gt;
+</code></pre></div>
+<p>Вместо <code>&lt;project-name&gt;</code> следует написать название вашого проекта</p>
+<blockquote>
+<p>ВАЖНО: Потдерживаються лишь англиские символы, точки, подчеркивание и дефисы!</p>
+</blockquote>
+<p>После выполения команды создастся папка с именем проекта. В ней будут находится несколько файлов, нас интересует лишь <code>main.ql</code>
+В нем уже будет написан пример программы, которая выведет "Hello, World!" в консоль:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">include</span><span class="w"> </span><span class="s">&quot;$lib/base&quot;</span>
+
+<span class="nv">function</span><span class="w"> </span><span class="nv">main</span><span class="p">():</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nc">Console</span><span class="p">.</span><span class="nv">println</span><span class="p">(</span><span class="s">&quot;Hello, World!&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Для полного разбора данного примера смотрите статью: <a href="../syntax/hello-program/">"Hello, World!" программа</a>.</p>
+<p>Чтобы запустить программу следует в <strong>директории проекта</strong> прописать комманду:</p>
+<div class="highlight"><pre><span></span><code>ql run
+</code></pre></div>
+<p>Данная команда запустить компиляцию и выполнение кода.</p>
+<p>Поздравляю, вы написали свою первую программу! Чтобы лучше разобраться в коде прочитайте: <a href="../syntax/introduction/">Синтаксис языка</a>.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Навигация по странице">
+        <a href="../project/" class="btn btn-neutral float-left" title="Project"><span class="icon icon-circle-arrow-left"></span> Назад</a>
+        <a href="../syntax/introduction/" class="btn btn-neutral float-right" title="Introduction">Вперед <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Собрано в <a href="https://www.mkdocs.org/">MkDocs</a> с использованием <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы</a> от <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Версии">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/SOTOKATA/Qlang-guide-book" class="fa fa-code-fork" style="color: #fcfcfc"> Github</a>
+        </span>
+    
+    
+      <span><a href="../project/" style="color: #fcfcfc">&laquo; Назад</a></span>
+    
+    
+      <span><a href="../syntax/introduction/" style="color: #fcfcfc">Вперед &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../assets/javascripts/extra.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

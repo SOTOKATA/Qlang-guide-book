@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="SOTOKATA" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Using - Qlang documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Using";
+        var mkdocs_page_input_path = "external-lib\\using.ru.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/ql.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../assets/logo.png" class="logo" alt="Логотип"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" title="Введите поисковый запрос" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Навигационное меню">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../installation/">Installation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../project/">Project</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../my-first-program/">My first program</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Syntax</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../syntax/introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../syntax/body/">Bodies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../syntax/class/">Classes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../syntax/function/">Functions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../syntax/variable/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../syntax/blocks/">Blocks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../syntax/include/">Include files</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">External Libraries (C#)</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../creation/">Creation</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Using</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../limitation.md">Limitation</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Мобильная версия навигации">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Qlang documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Документация"></a></li>
+          <li class="breadcrumb-item">External Libraries (C#)</li>
+      <li class="breadcrumb-item active">Using</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/SOTOKATA/Qlang-guide-book/edit/master/docs/external-lib/using.ru.md" class="icon icon-github"> Редактировать в Github</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="qlang">Использование внешних библиотек в Qlang</h1>
+<p>Каждая внешняя библиотека - это папка с <code>.dll</code> файлами.</p>
+<p>Для добавления внешней C# библиотеки следует использовать <code>native</code>.</p>
+<p><code>native</code> - это ключевое слово, которое аналогично <code>include</code>, но добавляет внешние библиотеки.</p>
+<p>Пример использования:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">native</span><span class="w"> </span><span class="s">&quot;path/to/dll/folder&quot;</span>
+</code></pre></div>
+<p><code>native</code> принимает только папки и включает в проект <strong>все</strong> файлы типа <code>.dll</code> в ней (не учитывая суб-папки).</p>
+<p>После этого вы можете использовать специальную функцию <code>_native</code> для вызова функций из C# библиотек.</p>
+<p>Функция принимает неограниченое количество аргументов, но первый - это всегда путь к функции.
+Путь состоит из <code>Namespace</code>, <code>Class</code>, <code>FunctionName</code>: "namespace.class.function". Также функция <code>_native</code> может возращять значения, если это прописано в реализации C# функции.</p>
+<p>Пример вызова функции <code>write</code>, которая описана в статье: <a href="../creation/">Создание библиотеки</a>:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">native</span><span class="w"> </span><span class="s">&quot;sotokataLib&quot;</span>
+
+<span class="nv">function</span><span class="w"> </span><span class="nv">main</span><span class="p">():</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="err">_</span><span class="nv">native</span><span class="p">(</span><span class="s">&quot;sotokata.console.write&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Hello, World!&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Навигация по странице">
+        <a href="../creation/" class="btn btn-neutral float-left" title="Creation"><span class="icon icon-circle-arrow-left"></span> Назад</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Собрано в <a href="https://www.mkdocs.org/">MkDocs</a> с использованием <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы</a> от <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Версии">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/SOTOKATA/Qlang-guide-book" class="fa fa-code-fork" style="color: #fcfcfc"> Github</a>
+        </span>
+    
+    
+      <span><a href="../creation/" style="color: #fcfcfc">&laquo; Назад</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../assets/javascripts/extra.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

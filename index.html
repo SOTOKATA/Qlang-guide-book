@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="Official documentation for Qlang programming language." /><meta name="author" content="SOTOKATA" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Qlang documentation</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Introduction";
+        var mkdocs_page_input_path = "index.ru.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/ql.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".">
+          <img src="assets/logo.png" class="logo" alt="Логотип"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" title="Введите поисковый запрос" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Навигационное меню">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Introduction</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_1">Вступление</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">Как он работает?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#qlang_1">Для чего я могу использоать Qlang?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">Целесообразно ли его использовать?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_4">Я хочу писать код, с чего начать?</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="installation/">Installation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="project/">Project</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="my-first-program/">My first program</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Syntax</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="syntax/introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="syntax/body/">Bodies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="syntax/class/">Classes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="syntax/function/">Functions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="syntax/variable/">Variables</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="syntax/blocks/">Blocks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="syntax/include/">Include files</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">External Libraries (C#)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="external-lib/introduction/">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="external-lib/installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="external-lib/creation/">Creation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="external-lib/using/">Using</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="external-lib/limitation.md">Limitation</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Мобильная версия навигации">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">Qlang documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Документация"></a></li>
+      <li class="breadcrumb-item active">Introduction</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/SOTOKATA/Qlang-guide-book/edit/master/docs/index.ru.md" class="icon icon-github"> Редактировать в Github</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="qlang">Qlang документация</h1>
+<h2 id="_1">Вступление</h2>
+<p>Инструкции по установке находяться <em><a href="installation/">тут</a></em>.</p>
+<p><strong>Qlang</strong> (Quick Language) - это язык програмирования созданый в 2025 году студентом для курсовой.
+Данный язык являеться не конкурентно способным и создан только как пример.</p>
+<h2 id="_2">Как он работает?</h2>
+<p>Qlang работает как транслятор комманд в C#.
+Компилятор "переводит" код в команды на C# и потом их выполняет.
+Компиляция происходит как обычное создания C# программы с runtime машиной и классом программы.</p>
+<h2 id="qlang_1">Для чего я могу использоать Qlang?</h2>
+<p>Язык не позиционирует себя как язык конкретной отрасли и может быть пременим для всего.
+Функционал схож с C# и также доступно написание <a href="external-lib/introduction/">собственых библиотек на C#</a>.</p>
+<p>Также есть уже написаная адаптация <a href="https://www.raylib.com/">Raylib</a>, которая встроена в стандартный набор библиотек в компиляторе. Работает через <a href="https://github.com/raylib-cs/raylib-cs">Raylib_cs</a>.</p>
+<h2 id="_3">Целесообразно ли его использовать?</h2>
+<p>Сложный вопрос, язык по-факту являеться C#, но с другим синтаксисом и возможностями.
+Как и было сказано раньше, сам язык не претендует на полноценный язык програмирования и может быть заброшен.</p>
+<h2 id="_4">Я хочу писать код, с чего начать?</h2>
+<p>Первое и самое важное - установите язык. Статья по установке: <a href="installation/">Установка</a></p>
+<p>После уже можно переходить к созданию первой программы. Статья по созданию: <a href="my-first-program/">Моя первая программа</a>.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Навигация по странице">
+        <a href="installation/" class="btn btn-neutral float-right" title="Installation">Вперед <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Собрано в <a href="https://www.mkdocs.org/">MkDocs</a> с использованием <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы</a> от <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Версии">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/SOTOKATA/Qlang-guide-book" class="fa fa-code-fork" style="color: #fcfcfc"> Github</a>
+        </span>
+    
+    
+    
+      <span><a href="installation/" style="color: #fcfcfc">Вперед &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="assets/javascripts/extra.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2025-12-31 00:59:16.308293+00:00
+-->
