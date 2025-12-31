@@ -96,13 +96,15 @@
 This means that in order to create the final program, you need to create a project.</p>
 <h2 id="project-creation">Project creation</h2>
 <p>To create a project, use the <code>new</code> command:</p>
-<pre class="highlight"><code class="language-powershell">ql new [project_name]</code></pre>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">ql</span> <span class="n">new</span> <span class="no">[project_name]</span>
+</span></code></pre></div>
 <p>A folder named <code>[project_name]</code> will be created.</p>
 <p>Each project contains the following files:</p>
-<pre class="highlight"><code class="language-path">project_name/
-main.ql
-project.settings.json
-compile.settings.json</code></pre>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>project_name/
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>main.ql
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>project.settings.json
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>compile.settings.json
+</span></code></pre></div>
 <p><code>main.ql</code> - a file that will be processed by the compiler.</p>
 <p><code>project.settings.json</code> - project parameters (name, as an example).</p>
 <p><code>compile.settings.json</code> - compilation parameters (using debug mode as an example).</p>
@@ -111,11 +113,13 @@ compile.settings.json</code></pre>
 </blockquote>
 <h2 id="project-configuration">Project configuration</h2>
 <p>Project parameters can be configured using the <code>set</code> command:</p>
-<pre class="highlight"><code class="language-powershell">ql set [param] [value]</code></pre>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">ql</span> <span class="nb">set </span><span class="no">[param] [value]</span>
+</span></code></pre></div>
 <p><code>[param]</code> - the parameter that should be changed.</p>
 <p><code>[value]</code> - the new value of the parameter.</p>
 <p>To obtain information about the current value of a parameter, use the <code>get</code> command:</p>
-<pre class="highlight"><code class="language-powershell">ql get [param]</code></pre>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">ql</span> <span class="n">get</span> <span class="no">[param]</span>
+</span></code></pre></div>
 <p><code>[param]</code> - the parameter for which information should be obtained.</p>
 <h2 id="deleting-a-project">Deleting a project</h2>
 <p>Just delete the project folder.</p>

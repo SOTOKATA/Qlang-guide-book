@@ -114,111 +114,119 @@
                 <h1 id="syntax">Syntax</h1>
 <p>The syntax of the language is similar to JavaScript, but also has elements from C++ and C#.</p>
 <p>An example of a program that will display <code>Hello, World!</code> in the console:</p>
-<pre class="highlight"><code class="language-qlc">// Adding a standard class package (in our case, the `Console` class)
-// This file must be added because it contains the core functionality of the language.
-include "$lib/base"
-
-// Creating the `main` function, which will be called when the program starts
-function main(): {
-    // Call the `println` function from the `Console` class and pass the argument `“Hello, World!”`
-    // To end the line, use `;`
-    Console.println("Hello, World!");
-}</code></pre>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>// Adding a standard class package (in our case, the `Console` class)
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>// This file must be added because it contains the core functionality of the language.
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>include &quot;$lib/base&quot;
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>// Creating the `main` function, which will be called when the program starts
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>function main(): {
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    // Call the `println` function from the `Console` class and pass the argument `“Hello, World!”`
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    // To end the line, use `;`
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    Console.println(&quot;Hello, World!&quot;);
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>}
+</span></code></pre></div>
 <h2 id="class">Class</h2>
 <h3 id="creation">Creation</h3>
 <p>To create a class, you need to write the keyword <code>class</code> and the class name:</p>
-<pre class="highlight"><code class="language-ql">class MyClass: {
-    // Function that will be called when creating a new copy of the class.
-    // JavaScript equivalent: constructor function
-    function new(): {
-
-    }
-}</code></pre>
+<div class="language-ql highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k k-Builtin">class</span><span class="w"> </span><span class="nc">MyClass</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="c1">// Function that will be called when creating a new copy of the class.</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="c1">// JavaScript equivalent: constructor function</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="nv">function</span><span class="w"> </span><span class="nv">new</span><span class="p">():</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">}</span>
+</span></code></pre></div>
 <h3 id="inheritance">Inheritance</h3>
 <p>A class can also inherit other classes:</p>
-<pre class="highlight"><code class="language-ql">class MyClass extends OtherClass: {
-    // Class body.
-}</code></pre>
+<div class="language-ql highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k k-Builtin">class</span><span class="w"> </span><span class="nc">MyClass</span><span class="w"> </span><span class="k k-Builtin">extends</span><span class="w"> </span><span class="nc">OtherClass</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="c1">// Class body.</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">}</span>
+</span></code></pre></div>
 <p>Functions and variables from the <code>OtherClass</code> class will be added to <code>MyClass</code>.</p>
 <h3 id="creating-a-copy">Creating a copy</h3>
 <p>Creating a new copy:</p>
-<pre class="highlight"><code class="language-ql">const myClassInstance = MyClass.new();</code></pre>
+<div class="language-ql highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">const</span><span class="w"> </span><span class="nv">myClassInstance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyClass</span><span class="p">.</span><span class="nv">new</span><span class="p">();</span>
+</span></code></pre></div>
 <h2 id="functions">Functions</h2>
 <h3 id="definition">Definition</h3>
 <p>The definition can be made in class or in a file.</p>
 <p>When declared in a class, the <code>private</code> modifier is also available. When added, the function can be called  <strong>only</strong> in the parent class.</p>
 <p>To declare a function, use the keyword <code>function</code>, the function name, and the parameters in parentheses (if any):</p>
-<pre class="highlight"><code class="language-ql">function main(): {
-    // Function body.
-}
-
-function functionExample(const&lt;String&gt; var): {
-    // Body recived var (must be `String` type).
-}
-
-class MyClass: {
-    // Acess only from `MyClass` (`MyClass.classFunction()`) or in `MyClass` (just: `classFunction()` or with keyword `this`)
-    function classFunction(): {
-
-    }
-
-    // Access only in `MyClass`
-    private function privateClassFunction(): {
-
-    }
-}</code></pre>
+<div class="language-ql highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">function</span><span class="w"> </span><span class="nv">main</span><span class="p">():</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="c1">// Function body.</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">}</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nv">function</span><span class="w"> </span><span class="nv">functionExample</span><span class="p">(</span><span class="nv">const</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span><span class="w"> </span><span class="nv">var</span><span class="p">):</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="c1">// Body recived var (must be `String` type).</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="p">}</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="k k-Builtin">class</span><span class="w"> </span><span class="nc">MyClass</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">    </span><span class="c1">// Acess only from `MyClass` (`MyClass.classFunction()`) or in `MyClass` (just: `classFunction()` or with keyword `this`)</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">    </span><span class="nv">function</span><span class="w"> </span><span class="nv">classFunction</span><span class="p">():</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">    </span><span class="c1">// Access only in `MyClass`</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">    </span><span class="k k-Builtin">private</span><span class="w"> </span><span class="nv">function</span><span class="w"> </span><span class="nv">privateClassFunction</span><span class="p">():</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="p">}</span>
+</span></code></pre></div>
 <h3 id="function-call">Function call</h3>
 <p>To call a function, write its name and parameters in parentheses (if any):</p>
-<pre class="highlight"><code class="language-ql">function main(): {
-    // Call function.
-    functionExample("Hello, World!");
-}
-
-function functionExample(const&lt;String&gt; var): {
-    // Body recived var (must be `String` type).
-}</code></pre>
+<div class="language-ql highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nv">function</span><span class="w"> </span><span class="nv">main</span><span class="p">():</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="c1">// Call function.</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="nv">functionExample</span><span class="p">(</span><span class="s">&quot;Hello, World!&quot;</span><span class="p">);</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="p">}</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="nv">function</span><span class="w"> </span><span class="nv">functionExample</span><span class="p">(</span><span class="nv">const</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span><span class="w"> </span><span class="nv">var</span><span class="p">):</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span><span class="c1">// Body recived var (must be `String` type).</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="p">}</span>
+</span></code></pre></div>
 <h2 id="variables">Variables</h2>
 <h3 id="definition_1">Definition</h3>
 <p>Declarations occur in classes, functions, blocks, and simply in a file.
 When declaring, you should specify the mutability of the function (<code>const</code> - immutable, <code>let</code> - mutable, as in JavaScript).</p>
 <p>When declared in a class, the <code>private</code> modifier is also available. When added, the variable can be called or changed <strong>only</strong> in the parent class.</p>
-<pre class="highlight"><code class="language-ql">// Access available from anywhere
-// This method is not recommended because the variable can also be obtained in other files.
-const global_var = 1;
-
-class MyClass: {
-    // Access only from or in `MyClass`
-    const class_var = 1;
-
-    // Access only in `MyClass`
-    private const private_class_var = 1;
-}
-
-function main(): {
-    // Access only in function `main`
-    let name = "Volodymyr";
-}</code></pre>
+<div class="language-ql highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1">// Access available from anywhere</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="c1">// This method is not recommended because the variable can also be obtained in other files.</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nv">const</span><span class="w"> </span><span class="nv">global_var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="k k-Builtin">class</span><span class="w"> </span><span class="nc">MyClass</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="c1">// Access only from or in `MyClass`</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="nv">const</span><span class="w"> </span><span class="nv">class_var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">    </span><span class="c1">// Access only in `MyClass`</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">    </span><span class="k k-Builtin">private</span><span class="w"> </span><span class="nv">const</span><span class="w"> </span><span class="nv">private_class_var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="p">}</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="nv">function</span><span class="w"> </span><span class="nv">main</span><span class="p">():</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">    </span><span class="c1">// Access only in function `main`</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="w">    </span><span class="nv">let</span><span class="w"> </span><span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Volodymyr&quot;</span><span class="p">;</span>
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="p">}</span>
+</span></code></pre></div>
 <h3 id="get-and-change">Get and change</h3>
 <p>To obtain the value of a variable, simply write the path to it.
 To change the value, you need to write the path to it and then write equal and the value.</p>
-<pre class="highlight"><code class="language-ql">class MyClass: {
-    let var = 10;
-
-    function myFunction() {
-        // Change the value of `var`
-        var = 20;
-    }
-}
-
-function main() {
-    // Now value of `var` is changed
-    MyClass.var = 30;
-
-    const myClassInstance = MyClass.new();
-
-    // Now value of `var` is changed in the instance `myClassInstance`
-    myClassInstance.var = 40;
-}</code></pre>
+<div class="language-ql highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k k-Builtin">class</span><span class="w"> </span><span class="nc">MyClass</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="nv">let</span><span class="w"> </span><span class="nv">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="nv">function</span><span class="w"> </span><span class="nv">myFunction</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">        </span><span class="c1">// Change the value of `var`</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">        </span><span class="nv">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="p">}</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="nv">function</span><span class="w"> </span><span class="nv">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">    </span><span class="c1">// Now value of `var` is changed</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">    </span><span class="nc">MyClass</span><span class="p">.</span><span class="nv">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">30</span><span class="p">;</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="w">    </span><span class="nv">const</span><span class="w"> </span><span class="nv">myClassInstance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyClass</span><span class="p">.</span><span class="nv">new</span><span class="p">();</span>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>
+</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="w">    </span><span class="c1">// Now value of `var` is changed in the instance `myClassInstance`</span>
+</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="w">    </span><span class="nv">myClassInstance</span><span class="p">.</span><span class="nv">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">40</span><span class="p">;</span>
+</span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="p">}</span>
+</span></code></pre></div>
               
             </div>
           </div><footer>

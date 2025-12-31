@@ -1,0 +1,59 @@
+site_name: Qlang documentation
+
+repo_url: https://github.com/SOTOKATA/Qlang-guide-book
+repo_name: Github
+
+site_author: SOTOKATA
+site_description: Official documentation for Qlang programming language.
+
+theme:
+  name: readthedocs
+  color_mode: auto
+  user_color_mode_toggle: true
+  locale: en
+  highlightjs: true
+  hljs_languages:
+    - ql
+  logo: assets/logo.png
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: en
+          name: English
+          build: true
+        - locale: ru
+          name: Русский
+          default: true
+          build: true
+
+markdown_extensions:
+  - pymdownx.superfences
+
+nav:
+  - Introduction: "index.md"
+  - Installation: "installation.md"
+  - Project: "project.md"
+  - My first program: "my-first-program.md"
+  - Syntax:
+    - Introduction: "syntax/introduction.md"
+    - Bodies: "syntax/body.md"
+    - Classes: "syntax/class.md"
+    - Functions: "syntax/function.md"
+    - Variables: "syntax/variable.md"
+    - Blocks: "syntax/blocks.md"
+    - Include files: "syntax/include.md"
+  - External Libraries (C#):
+    - Introduction: "external-lib/introduction.md"
+    - Installation: "external-lib/installation.md"
+    - Creation: "external-lib/creation.md"
+    - Using: "external-lib/using.md"
+    - Limitation: "external-lib/limitation.md"
+
+extra_javascript:
+  - assets/javascripts/extra.js
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css
